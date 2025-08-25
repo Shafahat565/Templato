@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Shafahat565.github.io/Templato",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "framer-motion": "^12.23.12",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.540.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
