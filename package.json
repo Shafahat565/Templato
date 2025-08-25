@@ -1,9 +1,10 @@
 {
   "name": "tailwindcss4",
   "private": true,
+  "homepage": "https://Shafahat565.github.io/Templato/",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Shafahat565.github.io/Templato",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
