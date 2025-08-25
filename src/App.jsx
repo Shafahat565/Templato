@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { Loader, TrendingUp, Zap, Palette, Smile, Mail, Github, Linkedin, Twitter } from "lucide-react";
 import * as THREE from 'three';
 
@@ -326,7 +326,7 @@ function HomePageContent() {
 // =============================================================================
 export default function App() {
   return (
-    <BrowserRouter  basename={process.env.NODE_ENV === 'production' ? '/repo-name' : '/'}>
+    <HashRouter  basename={process.env.NODE_ENV === 'production' ? '/repo-name' : '/'}>
       <Routes>
         <Route path="/" element={<HomePageContent />} />
         <Route path="/cosmic" element={<CosmicPortfolio />} />
@@ -336,6 +336,6 @@ export default function App() {
         <Route path="/sky" element={<SkyPortfolio />} />
        
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
