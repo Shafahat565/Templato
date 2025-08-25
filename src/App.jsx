@@ -326,7 +326,7 @@ function HomePageContent() {
 // =============================================================================
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename={process.env.NODE_ENV === 'production' ? '/repo-name' : '/'}>
       <Routes>
         <Route path="/" element={<HomePageContent />} />
         <Route path="/cosmic" element={<CosmicPortfolio />} />

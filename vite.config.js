@@ -11,7 +11,7 @@ export default defineConfig({
     
     tailwindcss(),
     react()],
-     base: isGH ? '/Templato' : '/',
+     base: isGH ? '/Templato/' : '/',
   
 
    

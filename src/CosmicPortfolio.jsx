@@ -8,7 +8,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pi
 // Theme: Black & White, starry sky with subtle vibrant accents (yellow/blue)
 // Notes: Uses smooth-scroll navbar, vertical project slider, cert pagination, rich skills graphs
 
-const AVATAR = './src//Profile.png';
+//const AVATAR = '';
 const PLACEHOLDER = (seed, w=700, h=300) => `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
 const COLORS = {
